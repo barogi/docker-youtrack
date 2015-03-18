@@ -1,5 +1,5 @@
 FROM dockerfile/java:oracle-java7
-MAINTAINER Maarten Balliauw <maarten.balliauw@jetbrains.com>
+MAINTAINER Till Backhaus <tback@tfw.ag>
 
 RUN wget http://download-cf.jetbrains.com/charisma/youtrack-6.0.12223.jar -O youtrack.jar
 
