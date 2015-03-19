@@ -15,9 +15,10 @@ Next, create a container.
 
 	docker run -d traumferienwohnungen/youtrack
 
-YouTrack starts and listens on port 80 in the container. To map it to the host's port 80, use the following command to create the container instead:
+YouTrack starts and listens on port 80 in the container.
+To map it to the host's port 8000, use the following command to create the container instead:
 
-	docker run --name="youtrack" -p 80:80 -d traumferienwohnungen/youtrack
+	docker run --name="youtrack" -p 8000:80 -d traumferienwohnungen/youtrack
 
 ### Additional settings
 
@@ -26,5 +27,5 @@ YouTrack stores its data and backups at ```/root/teamsysdata``` and ```/root/tea
 	docker run --name="youtrack" -d \
 	-v /path/on/host/teamsysdata:/root/teamsysdata \
 	-v /path/on/host/teamsysdata-backup:/root/teamsysdata-backup \
-	-p 80:80 \
+	-p 8000:80 \
 	traumferienwohnungen/youtrack
