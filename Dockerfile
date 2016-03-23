@@ -1,5 +1,5 @@
-FROM dockerfile/java:oracle-java7
-MAINTAINER Till Backhaus <tback@tfw.ag>
+FROM java:7
+#MAINTAINER Till Backhaus <tback@tfw.ag>
 
 ENV YOUTRACK_VERSION 6.5.17057
 
